@@ -1,5 +1,5 @@
 import "./topbar.scss";
-import { BsFillPersonFill } from "react-icons/bs";
+import {AiFillPhone} from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 
 export default function Topbar() {
@@ -11,7 +11,7 @@ export default function Topbar() {
             alg
           </a>
           <div className="itemContainer">
-            <BsFillPersonFill className="icon" />
+            <AiFillPhone className="icon" />
             <span>+905413539181</span>
           </div>
           <div className="itemContainer">
