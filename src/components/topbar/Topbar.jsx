@@ -2,9 +2,9 @@ import "./topbar.scss";
 import {AiFillPhone} from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 
-export default function Topbar() {
+export default function Topbar({isOpen, setIsOpen}) {
   return (
-    <div className="topbar active">
+    <div className={"topbar " + (isOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
@@ -20,7 +20,7 @@ export default function Topbar() {
           </div>
         </div>
         <div className="right">
-          <div className="hamburger">
+          <div className="hamburger" onClick={()=> setIsOpen(!isOpen) }>
             <span className="line1" ></span>
             <span className="line2" ></span>
             <span className="line3" ></span>
