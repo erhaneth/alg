@@ -16,7 +16,7 @@ export default function Topbar({isOpen, setIsOpen}) {
           </div>
           <div className="itemContainer">
             <AiOutlineMail className="icon" />
-            <span>aligumus@gmail.com</span>
+            <span>aligumuslaw@gmail.com</span>
           </div>
         </div>
         <div className="right">

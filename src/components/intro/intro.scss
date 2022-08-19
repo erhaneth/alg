@@ -1,3 +1,14 @@
 .intro {
-    background-color: brown;
+    background-color: white;
+    display: flex;
+
+    .right {
+        flex: 0.5;
+        background-color: aqua;
+    }
+
+    .left {
+        flex: 0.5;
+        background-color: rgb(50, 53, 53);
+    }
 }
