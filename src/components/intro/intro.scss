@@ -2,13 +2,29 @@
     background-color: white;
     display: flex;
 
+     .left {
+        flex: 0.5;
+        // background-color: rgb(132, 126, 126);
+        overflow: hidden;
+
+        .imgContainer {
+            width: 700px;
+            height: 700px;
+            background-color: rgb(176, 134, 80);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            float: right;
+
+
+            img {
+                height: 100%;
+            }
+        }
+    }
     .right {
         flex: 0.5;
-        background-color: aqua;
-    }
 
-    .left {
-        flex: 0.5;
-        background-color: rgb(50, 53, 53);
+        overflow: hidden;
     }
 }
