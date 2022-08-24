@@ -1,14 +1,14 @@
 import "./menu.scss";
 
-export default function menu({isOpen, setIsOpen}) {
+export default function Menu({isOpen, setIsOpen}) {
   return (
     <div className={"menu " + (isOpen && "active")}>
       <ul>
         <li onClick={()=>setIsOpen(false)}>
-          <a href="#intro">Home</a>
+          <a href="#intro">Anasayfa</a>
         </li >
         <li onClick={()=>setIsOpen(false)}>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">Hakkimizda</a>
         </li>
         <li onClick={()=>setIsOpen(false)}>
           <a href="#works">Calisma Alanlari</a>
