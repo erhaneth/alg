@@ -1,45 +1,58 @@
+import React, { useState, useEffect } from "react";
 import "./intro.scss";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+// import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 
 export default function Intro() {
-  // textRef is a ref to the text element
-  const textRef = useRef();
-  // usEffect is a hook that runs a function once
-  // when the component is rendered
+  const slides = [
+    {
+      image: "/assets/intro/pexels-photo.jpg",
+      text: "Alg hukuk burosu olarak hakkinizi icin ozle savunma",
+    },
+    {
+      image: "/assets/intro/slide-boardroom.jpg",
+      text: "Alg hukuk burosue, yillarin deneyimi ile yasal haklariniza sahip cikar",
+    },
+    {
+      image: "/assets/intro/slide-terazi.jpg",
+      text: "Alg hukuk burosu guvenin",
+    },
+    {
+      image: "/assets/intro/slide-zoom.jpg",
+      text: "Algi hukuk burosu sizin bugun, yarin ve herzaman yaninizda.",
+    },
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   useEffect(() => {
-    init(textRef.current, {
-      showCursor: true,
-      backDelay: 1500,
-      backSpeed: 60,
-      strings: ["Hizli Sonuc Getirir", "Sahip Cikar", "Sadiktir"],
-    });
-  }, []);
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/intro.png" alt="" />
+          <img src={slides[currentSlide].image} alt="" />
+          <span className="overlayText">{slides[currentSlide].text}</span>
+          <div
+            className="slideIcon"
+            onClick={() =>
+              setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length)
+            }
+          >
+            <ChevronRightIcon className="slideIcon" />
+          </div>
         </div>
       </div>
-
-      <div className="right">
-        <div className="wrapper">
-          <h1>ALG hukuk burosu olarak,</h1>
-
-          <h3>
-            sizin davaniza:
-            <span ref={textRef}></span>
-          </h3>
-          <h2>Avukat, Ali Gumus</h2>
-        </div>
-          <a href="#portfolio">
-            <img src="assets/down.png" alt="/" />
-          </a>
-      </div>
+      {/* <div className="right">
+        <a href="#portfolio">
+          <img src="/assets/down.png" alt="/" />
+        </a>
+      </div> */}
     </div>
   );
 }
-
-
-// strings: ["hizli sonuc getirir", "sahip cikar", "sadiktir"],

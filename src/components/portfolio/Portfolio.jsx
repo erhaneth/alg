@@ -9,22 +9,21 @@ export default function Portfolio() {
         sunuyoruz. Diyarbakır'ın Yenişehir ilçesinde faaliyet gösteren ofisimiz,
         uzman kadrosu ve müvekkillerine sunduğu kapsamlı hizmetler ile öne
         çıkıyor.
-        <br />
-        <br />
+      </p>
+      <p>
         Hukuki alanlarda uzmanlaşmış ekibimiz, müvekkillerimize pazarlama, iş
         stratejileri ve hukuki çözümler konusunda destek verirken, yerel ve
         uluslararası düzeyde faaliyet gösteren müvekkillerimize rehberlik
         ediyor.
-        <br />
-        <br />
-        Bizimle çalışmanın avantajları:
-        <ul>
-          <li>Alanında uzman avukatlar</li>
-          <li>Pozitif müşteri deneyimi</li>
-          <li>Rekabetçi hukuki çözümler</li>
-          <li>Güvenilirlik ve şeffaflık</li>
-        </ul>
-        <br />
+      </p>
+      <p>Bizimle çalışmanın avantajları:</p>
+      <ul>
+        <li>Alanında uzman avukatlar</li>
+        <li>Pozitif müşteri deneyimi</li>
+        <li>Rekabetçi hukuki çözümler</li>
+        <li>Güvenilirlik ve şeffaflık</li>
+      </ul>
+      <p>
         ALG Hukuk Ve Danışmanlık Ofisi olarak, müvekkillerimize güçlü iş
         ilişkileri kurma ve hukuki ihtiyaçlarını en iyi şekilde karşılama
         taahhüdünde bulunuyoruz. Sizinle çalışmayı dört gözle bekliyoruz.
