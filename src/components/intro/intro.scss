@@ -1,37 +1,72 @@
+.intro {
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+* {
+    box-sizing: border-box;
+    // height: 2px;
+}
+
 .imgContainer {
     position: relative;
-    /* Ensure the container has a size; otherwise, child absolute elements might not show. */
     width: 100%;
     height: 100%;
 
+
+
+
     img {
-        width: 100%;
+        max-width: 100%;
         height: 100%;
+        width: 100%;
         object-fit: cover;
+
     }
 
     .overlayText {
-        font-size: 60px;
-        font-weight: bold;
+        font-size: 50px;
+        font-weight: 400;
         color: white;
-        font-family: Roboto, sans-serif;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 20px;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 45%;
+        left: 40%;
         transform: translate(-50%, -50%);
     }
 
     .slideIcon {
         position: absolute;
         top: 50%;
-        right: 10px;
-        /* Adjust based on your preference */
-        transform: translateY(-50%);
         z-index: 3;
-        /* Ensure it's above other positioned elements */
         color: white;
-        /* Ensure the icon is visible against the image */
         cursor: pointer;
-        /* Indicate it's clickable */
+        transform: translateY(-50%);
+    }
+
+    .slideIcon.left {
+        left: 25px;
+        font-size: 60px;
+
+    }
+
+    .slideIcon.right {
+        right: 25px;
+        font-size: 60px;
+    }
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .overlayText {
+        font-size: 40px;
+        /* Adjusted font-size for mobile devices */
+    }
+
+    .slideIcon {
+        /* Optionally resize icons for mobile */
+        font-size: large;
     }
 }

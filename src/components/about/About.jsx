@@ -1,8 +1,8 @@
-import "./portfolio.scss";
+import "./about.scss";
 
-export default function Portfolio() {
+export default function About() {
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="about" id="about">
       <h2>Hukuki Danışmanlık ve Hizmetlerimiz</h2>
       <p>
         ALG Hukuk Ve Danışmanlık Ofisi olarak, hukuki ihtiyaçlarınıza çözüm
@@ -18,7 +18,7 @@ export default function Portfolio() {
       </p>
       <p>Bizimle çalışmanın avantajları:</p>
       <ul>
-        <li>Alanında uzman avukatlar</li>
+        <li>Alanında uzman avukat</li>
         <li>Pozitif müşteri deneyimi</li>
         <li>Rekabetçi hukuki çözümler</li>
         <li>Güvenilirlik ve şeffaflık</li>
