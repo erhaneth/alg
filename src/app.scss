@@ -1,22 +1,25 @@
 .app {
     height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
 
     .sections {
         width: 100%;
         height: calc(100vh - 70px);
         background-color: rgb(145, 192, 192);
-        position: relative; /* important */
+        position: relative;
+        /* important */
         top: 70px;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none;
+
         &::-webkit-scrollbar {
             display: none;
         }
 
-        > * {
+        >* {
             width: 100%;
-            height: calc(100% - 70px);
+            height: calc(100vh - 70px);
             scroll-snap-align: start;
         }
 
