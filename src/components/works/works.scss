@@ -1,62 +1,66 @@
 .works {
-    background-color: rgb(158, 175, 128);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 255);
 
-    .services-container {
-        font-family: 'Arial', sans-serif;
-        padding: 20px;
-    }
+}
 
-    .services-header {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
 
-    .divider {
-        width: 100%;
-        border: none;
-        border-top: 1px solid #ccc;
-        margin: 10px 0;
-    }
 
-    .services-description {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
+.servicesContainer {
+    font-family: 'Arial', sans-serif;
+    padding: 50px;
+}
 
-    .images-container {
-        display: flex;
-    }
+.servicesHeader {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-    .left-container {
-        flex: 1;
-        margin-right: 20px;
-    }
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
 
-    .large-image {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+.servicesDescription {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
-    .right-container {
-        flex: 1;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+.imagesContainer {
+    display: flex;
+    justify-content: center;
+}
 
-    .small-image {
-        width: calc(50% - 10px);
-        /* Subtracting margin */
-        height: auto;
-        margin-bottom: 20px;
-    }
+.leftContainer {
+    flex: 1;
+    margin-right: 20px;
+}
 
-    .top-row,
-    .bottom-row {
-        display: flex;
-        justify-content: space-between;
-    }
+.largeImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+.rightContainer {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.smallImage {
+    width: calc(50% - 10px);
+    /* Subtracting margin */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.topRow,
+.bottomRow {
+    display: flex;
+    justify-content: space-between;
 }

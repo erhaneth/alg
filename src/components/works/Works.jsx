@@ -1,36 +1,49 @@
+import React from "react";
 import "./works.scss";
 
-import React from "react";
-
-const Works = () => {
+export default function Works() {
   return (
-    <div className="services-container">
-      <h1 className="services-header">Services</h1>
-      <hr className="divider" />
-      <p className="services-description">
-        Description about the services offered...
-      </p>
+    <div className="works" id="works">
+      <div className="servicesContainer">
+        <h1 className="servicesHeader">Services</h1>
+        <hr className="divider" />
+        <p className="serviceDescription">
+          Description about the services offered...
+        </p>
 
-      <div className="images-container">
-        <div className="left-container">
-          <img
-            src="/assets/works/home-practice-areas-business-litigation.jpg"
-            className="large-image"
-          />
-        </div>
-        <div className="right-container">
-          <div className="top-row">
-            <img src="path_to_small_image1.jpg" className="small-image" />
-            <img src="path_to_small_image2.jpg" className="small-image" />
+        <div className="imagesContainer">
+          <div className="leftContainer">
+            <img
+              src="/assets/works/works-practice-areas-re.jpg"
+              className="largeImage"
+              alt=""
+            />
           </div>
-          <div className="bottom-row">
-            <img src="path_to_small_image3.jpg" className="small-image" />
-            <img src="path_to_small_image4.jpg" className="small-image" />
+          <div className="rightContainer">
+            <div className="topRow">
+              <img
+                src="/assets/works/works-practice-areas-tax.jpg"
+                className="smallImage"
+              />
+              <img
+                src="/assets/works/works-practice-areas-transactions.jpg"
+                className="smallImage"
+              />
+            </div>
+
+            <div className="bottomRow">
+              <img
+                src="/assets/works/works-practice-areas-trusts.jpg"
+                className="smallImage"
+              />
+              <img
+                src="/assets/works/works-practice-areas-business-litigation.jpg"
+                className="smallImage"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default Works;
+}
