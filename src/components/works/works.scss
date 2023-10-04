@@ -1,5 +1,5 @@
 .works {
-    font-family: 'Times New Roman', Times, serif;
+
     background-color: rgb(255, 255, 255);
 
 }
@@ -7,7 +7,7 @@
 
 
 .servicesContainer {
-    font-family: 'Arial', sans-serif;
+    // font-family: 'Arial', sans-serif;
     padding: 50px;
 }
 
@@ -15,6 +15,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .divider {
@@ -22,11 +23,17 @@
     border: none;
     border-top: 1px solid #ccc;
     margin: 10px 0;
+    padding: 4px;
 }
 
 .servicesDescription {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+
 }
 
 .imagesContainer {
@@ -39,11 +46,11 @@
     margin-right: 20px;
 }
 
-.largeImage {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+// .largeImage {
+//     width: 100%;
+//     height: auto;
+//     display: block;
+// }
 
 .rightContainer {
     flex: 1;
@@ -63,4 +70,25 @@
 .bottomRow {
     display: flex;
     justify-content: space-between;
+}
+
+.imageWithText {
+    position: relative;
+    display: inline-block; // To fit the container to the image size
+
+    .largeImage {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .imageText {
+        position: absolute;
+        top: 90%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        color: white;
+        padding: 5px;
+        border-radius: 5px; // Optional, for a rounded appearance
+    }
 }

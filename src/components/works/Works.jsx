@@ -5,20 +5,28 @@ export default function Works() {
   return (
     <div className="works" id="works">
       <div className="servicesContainer">
-        <h1 className="servicesHeader">Services</h1>
+        <h1 className="servicesHeader">Çalışma Alanları</h1>
         <hr className="divider" />
-        <p className="serviceDescription">
-          Description about the services offered...
+        <p className="servicesDescription">
+          Alg hukuk burosu olarak, gayrimenkul ve iş litigasyonu, vergi hukuku,
+          güvence ve miraslar, fikri mülkiyet, varlık koruma ve işlem hukuku
+          gibi tüm konularda uzman hukuki danışmanlıkla sizin yanınızdadır.
+          Zorlu süreçleri profesyonel bir şekilde atlatmanız için sizlere en iyi
+          hizmeti sunmayı amaçlıyoruz.
         </p>
 
         <div className="imagesContainer">
           <div className="leftContainer">
-            <img
-              src="/assets/works/works-practice-areas-re.jpg"
-              className="largeImage"
-              alt=""
-            />
+            <div className="imageWithText">
+              <img
+                src="/assets/works/works-practice-areas-re.jpg"
+                className="largeImage"
+                alt="Real Estate Image"
+              />
+              <span className="imageText">Real Estate</span>
+            </div>
           </div>
+
           <div className="rightContainer">
             <div className="topRow">
               <img
