@@ -2,7 +2,7 @@ import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
 import Works from "./components/works/Works";
-import Testemonials from "./components/testemonials/Testemonials";
+import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import "./app.scss";
 import Menu from "./components/menu/Menu";
@@ -19,7 +19,7 @@ function App() {
         <Intro />
         <About />
         <Works />
-        <Testemonials />
+        <Testimonials />
         <Contact />
       </div>
     </div>

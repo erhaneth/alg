@@ -1,11 +1,49 @@
 .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: antiquewhite;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.responsive-img {
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-img {
     max-width: 100%;
     height: auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* Add a border to make the image stand out */
+}
+
+.right-section {
+    flex: 2;
+    padding: 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 5px;
 }

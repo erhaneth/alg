@@ -4,17 +4,16 @@ import "./works.scss";
 export default function Works() {
   return (
     <div className="works" id="works">
+      <h1 className="servicesHeader">Çalışma Alanları</h1>
+      <p className="servicesDescription">
+        Alg hukuk burosu olarak, gayrimenkul ve iş litigasyonu, vergi hukuku,
+        güvence ve miraslar, fikri mülkiyet, varlık koruma ve işlem hukuku gibi
+        tüm konularda uzman hukuki danışmanlıkla sizin yanınızdadır. Zorlu
+        süreçleri profesyonel bir şekilde atlatmanız için sizlere en iyi hizmeti
+        sunmayı amaçlıyoruz.
+      </p>
+      <hr className="divider" />
       <div className="servicesContainer">
-        <h1 className="servicesHeader">Çalışma Alanları</h1>
-        <hr className="divider" />
-        <p className="servicesDescription">
-          Alg hukuk burosu olarak, gayrimenkul ve iş litigasyonu, vergi hukuku,
-          güvence ve miraslar, fikri mülkiyet, varlık koruma ve işlem hukuku
-          gibi tüm konularda uzman hukuki danışmanlıkla sizin yanınızdadır.
-          Zorlu süreçleri profesyonel bir şekilde atlatmanız için sizlere en iyi
-          hizmeti sunmayı amaçlıyoruz.
-        </p>
-
         <div className="imagesContainer">
           <div className="leftContainer">
             <div className="imageWithText">
@@ -23,7 +22,7 @@ export default function Works() {
                 className="largeImage"
                 alt="Real Estate Image"
               />
-              <span className="imageText">Real Estate</span>
+              <span className="imageText">Emlak ve Gayrimenkul Hukuku</span>
             </div>
           </div>
 

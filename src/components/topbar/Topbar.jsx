@@ -6,7 +6,10 @@ export default function Topbar({ isOpen, setIsOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            alg
+            <img
+              src="../assets/alglogo.png"
+              style={{ height: "95px", weight: "95px" }}
+            />
           </a>
         </div>
         <div className="right">

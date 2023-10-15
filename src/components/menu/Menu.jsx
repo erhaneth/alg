@@ -15,7 +15,7 @@ export default function Menu({ isOpen, setIsOpen }) {
         </li>
 
         <li onClick={() => setIsOpen(false)}>
-          <a href="#testemonials">Gorusler</a>
+          <a href="#testimonials">Gorusler</a>
         </li>
         <li onClick={() => setIsOpen(false)}>
           <a href="#contact">Iletisim</a>

@@ -1,0 +1,41 @@
+.testimonials {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    flex: 0 0 100%;
+    text-align: left;
+    transition: transform 1s ease-in-out;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.testimonial-card.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.testimonial-author {
+    font-size: 0.8rem;
+    padding: 10px;
+}
