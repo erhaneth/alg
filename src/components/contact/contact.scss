@@ -1,3 +1,58 @@
-.contact {
-    background-color: aqua;
+.contact-form {
+    margin-top: 20px;
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input,
+        textarea,
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input,
+        textarea {
+            background-color: rgba(255, 255, 255, 0.7);
+
+            &:hover,
+            &:focus {
+                background-color: #ffffff;
+            }
+        }
+
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+}
+
+.mapContainer {
+    margin-top: 20px;
+
+    iframe {
+        border: none;
+    }
 }

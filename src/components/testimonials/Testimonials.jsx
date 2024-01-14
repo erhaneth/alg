@@ -40,8 +40,12 @@ export default function Testimonials() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonialsData.length);
-    }, 5000); // Change testimonial every 5 seconds (adjust as needed)
+      setCurrentIndex((prevIndex) => {
+        const newIndex = (prevIndex + 1) % testimonialsData.length;
+        console.log("New index:", newIndex); // Log the updated index
+        return newIndex;
+      });
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);

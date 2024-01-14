@@ -1,12 +1,9 @@
 .intro {
     font-family: 'Times New Roman', Times, serif;
-
-
 }
 
 * {
     box-sizing: border-box;
-    // height: 2px;
 }
 
 .imgContainer {
@@ -14,15 +11,11 @@
     width: 100%;
     height: 100%;
 
-
-
-
     img {
         max-width: 100%;
         height: 100%;
         width: 100%;
         object-fit: cover;
-
     }
 
     .overlayText {
@@ -33,7 +26,7 @@
         padding: 20px;
         position: absolute;
         top: 35%;
-        left: 40%;
+        left: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -44,29 +37,39 @@
         color: white;
         cursor: pointer;
         transform: translateY(-50%);
+        font-size: 60px; // Larger size for touch devices
     }
 
     .slideIcon.left {
         left: 25px;
-        font-size: 60px;
-
     }
 
     .slideIcon.right {
         right: 25px;
-        font-size: 60px;
+        z-index: 10;
     }
 }
 
 /* Responsive breakpoints */
+@media (max-width: 1024px) {
+    .overlayText {
+        font-size: 40px; // Slightly smaller text for tablet devices
+    }
+}
+
 @media (max-width: 768px) {
     .overlayText {
-        font-size: 40px;
-        /* Adjusted font-size for mobile devices */
+        font-size: 30px; // Further reduced text size for mobile devices
     }
 
     .slideIcon {
-        /* Optionally resize icons for mobile */
-        font-size: large;
+        font-size: 48px; // Adjust icon size for easier interaction on mobile
+    }
+}
+
+@media (max-width: 480px) {
+    .overlayText {
+        font-size: 24px; // Smaller text for very small devices
+        top: 50%; // Adjust text position for better visibility
     }
 }

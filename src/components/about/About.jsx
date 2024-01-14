@@ -3,8 +3,14 @@ import React from "react";
 import { Paper, Typography, List, ListItem, ListItemText } from "@mui/material";
 
 export default function About() {
+  const listItems = [
+    "Alanında uzman avukat",
+    "Pozitif müşteri deneyimi",
+    "Rekabetçi hukuki çözümler",
+    "Güvenilirlik ve şeffaflık",
+  ];
   return (
-    <Paper className="about">
+    <Paper className="about" id="about">
       <div className="left-section">
         {/* Add your rounded image component here */}
         <img src="/assets/about.png" alt="About Us" className="rounded-img" />
@@ -27,18 +33,11 @@ export default function About() {
         </Typography>
         <Typography variant="h6">Bizimle çalışmanın avantajları:</Typography>
         <List>
-          <ListItem>
-            <ListItemText primary="Alanında uzman avukat" />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Pozitif müşteri deneyimi" />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Rekabetçi hukuki çözümler" />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Güvenilirlik ve şeffaflık" />
-          </ListItem>
+          {listItems.map((item, index) => (
+            <ListItem key={index}>
+              <ListItemText primary={item} />
+            </ListItem>
+          ))}
         </List>
         <Typography>
           ALG Hukuk Ve Danışmanlık Ofisi olarak, müvekkillerimize güçlü iş

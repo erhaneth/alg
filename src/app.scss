@@ -4,11 +4,12 @@
 
     .sections {
         width: 100%;
-        height: calc(100vh - 70px);
-        background-color: rgb(227, 227, 227);
+        min-height: calc(100vh - 70px);
+        background-color: rgb(213, 210, 210);
         position: relative;
         /* important */
         top: 70px;
+        bottom: 70px;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none;

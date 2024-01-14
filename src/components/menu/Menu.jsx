@@ -1,8 +1,20 @@
 import "./menu.scss";
+import CloseIcon from "@mui/icons-material/Close";
+import React, { useRef } from "react";
+import { useOutsideClick } from "../utils/useOutsideClick/useOutsideClick";
 
 export default function Menu({ isOpen, setIsOpen }) {
+  const menuRef = useRef();
+  useOutsideClick(menuRef, () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  });
   return (
-    <div className={"menu " + (isOpen && "active")}>
+    <div ref={menuRef} className={"menu " + (isOpen ? "active" : "")}>
+      <span className="closeIcon" onClick={() => setIsOpen(false)}>
+        <CloseIcon />
+      </span>
       <ul>
         <li onClick={() => setIsOpen(false)}>
           <a href="#intro">Anasayfa</a>

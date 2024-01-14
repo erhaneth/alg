@@ -7,19 +7,19 @@ export default function Intro() {
   const slides = [
     {
       image: "/assets/intro/slide-terazi.jpg",
-      text: "Alg hukuk burosu guvenin",
+      text: "Alg hukuk burosu guven verir",
     },
     {
       image: "/assets/intro/pexels-photo.jpg",
-      text: "Alg hukuk burosu olarak hakkinizi icin ozle savunma",
+      text: "Alg hukuk burosu olarak hakkinizi icin ozel savunma",
     },
     {
       image: "/assets/intro/slide-boardroom.jpg",
-      text: "Alg hukuk burosue, yillarin deneyimi ile yasal haklariniza sahip cikar",
+      text: "Alg hukuk burosu, yillarin deneyimi ile yasal haklariniza sahip cikar",
     },
     {
       image: "/assets/intro/slide-zoom.jpg",
-      text: "Algi hukuk burosu sizin bugun, yarin ve herzaman yaninizda.",
+      text: "Algi hukuk burosu sizin bugun, yarin ve her zaman yaninizda.",
     },
   ];
 
